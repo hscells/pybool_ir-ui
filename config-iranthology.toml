@@ -1,0 +1,14 @@
+[parser]
+class = "pybool_ir.query.GenericQueryParser"
+parser_args = { }
+
+[indexer]
+class = "pybool_ir.index.generic.JsonlIndexer"
+path = "index-ir-anthology-07-11-2021"
+indexer_args = { store_fields = true }
+
+[app]
+default_query = 'evaluation:title'
+page_title = "IR Anthology"
+serp_renderer = "render_serp_iranthology"
+

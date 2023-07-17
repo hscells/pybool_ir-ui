@@ -1,0 +1,11 @@
+git+https://github.com/hscells/pylucene-packaged.git
+git+https://github.com/hscells/pybool_ir.git
+streamlit
+ir-measures
+ir-datasets
+lupyne
+jcc
+tqdm
+progressbar2
+dataclasses_json
+pyparsing
