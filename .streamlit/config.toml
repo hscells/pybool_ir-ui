@@ -1,2 +1,8 @@
+[server]
+fileWatcherType = "none"
+
 [client]
 toolbarMode = "viewer"
+
+[browser]
+browser.gatherUsageStats = false

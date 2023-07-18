@@ -1,5 +1,5 @@
+import dotenv
 import lucene
-import toml
 import streamlit as st
 from pybool_ir.experiments.retrieval import LuceneSearcher
 from streamlit.components.v1 import html
@@ -11,9 +11,7 @@ jvm = lucene.getVMEnv()
 jvm.attachCurrentThread()
 
 # Config ----------------------------------------------------------------------
-with open("config.toml", "r") as f:
-    app_config = toml.load(f)
-config = AppConfig(app_config["config_file"])
+config = AppConfig(dotenv.dotenv_values(".env")["PBIRUI_CONFIG_FILE"])
 parser = config.parser
 indexer = config.indexer
 default_query = config.default_query
