@@ -5,4 +5,4 @@ fileWatcherType = "none"
 toolbarMode = "viewer"
 
 [browser]
-browser.gatherUsageStats = false
+gatherUsageStats = false

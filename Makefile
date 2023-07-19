@@ -1,5 +1,5 @@
 docker-build:
-	docker build --progress=plain --tag "pbir-ui" -f docker/Dockerfile .
+	docker build --tag "pbir-ui" -f docker/Dockerfile .
 
 docker-run:
 	docker run --rm -it --platform linux/x86_64 \
