@@ -1,0 +1,14 @@
+[parser]
+class = "pybool_ir.query.GenericQueryParser"
+parser_args = { }
+
+[indexer]
+class = "pybool_ir.index.generic.JsonlIndexer"
+path = "index-treccovid"
+indexer_args = { store_fields = true }
+
+[app]
+default_query = 'covid:title'
+page_title = "CORD19"
+serp_renderer = "render_serp_treccovid"
+

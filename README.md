@@ -36,6 +36,32 @@ Or, if you are running in Docker:
 make docker-run
 ```
 
+## Example
+
+Want to see it in action?
+
+1. Download and index the [CORD-19](https://www.semanticscholar.org/cord19) dataset.
+```bash
+pybool_ir ir-datasets index -c cord19/trec-covid -i index-treccovid -s1
+```
+
+2. Edit the [.env](.env) file to point to [config-treccovid.toml](config-treccovid.toml).
+
+```bash
+PBIRUI_CONFIG_FILE=config-treccovid.toml
+```
+
+3. Run the UI.
+```bash
+streamlit run app.py
+```
+
+OR
+
+```bash
+make docker-run
+```
+
 ## Extending
 
 ### Implementing a SERP renderer
