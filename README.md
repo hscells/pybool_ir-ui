@@ -4,6 +4,8 @@
 
 This is a library for creating search interfaces for indexes created with [pybool_ir](https://github.com/hscells/pybool_ir), however any index created with [Lucene](https://lucene.apache.org/) is also compatible, including those from [pyserini](https://github.com/castorini/pyserini/).
 
+**DEMO** https://pubmed.chatnoir.eu/
+
 ## Installation
 
 Command line:
